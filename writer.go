@@ -113,7 +113,6 @@ func (w *Writer) Write(p []byte) (int, error) {
 	day := time.Now().Format(w.Pattern)
 	file := fmt.Sprintf("%s.%s.log", w.Prefix, day)
 	size := int64(len(p))
-	fmt.Println(file)
 	fp := path.Join(w.Dir, file)
 	fw, err := w.open(fp, size)
 	if err != nil {
