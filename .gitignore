@@ -1,0 +1,6 @@
+vendor
+.vscode
+main
+tmp
+*.log.*
+debug
