@@ -38,7 +38,7 @@ func New(dir string, prefix string, size int64) (*Writer, error) {
 	w.ChunkSize = size
 	w.Pattern = "20060102"
 	w.Default()
-	if err := os.MkdirAll(w.Prefix, 0666); err != nil {
+	if err := os.MkdirAll(w.Prefix, 0700); err != nil {
 		return nil, err
 	}
 	return w, nil
