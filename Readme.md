@@ -1,6 +1,11 @@
 # Chunked Writer
 
 
+## Notice
+
+[```lumberjack```][1] is nice rotate logger, just use it.
+
+
 ## Purpose
 
 The only purpose of this package is reduce the complexity of splitting logs. This package is extremely simple.
@@ -29,3 +34,7 @@ func main() {
 		Dir:       DefaultDir,
     }
 ```
+
+
+
+[1]: https://github.com/natefinch/lumberjack
